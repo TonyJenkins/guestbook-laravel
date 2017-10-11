@@ -4,7 +4,7 @@
 
 ## Requirements
 - Ensure that you have an up to date version of [composer](https://getcomposer.org/)
- [virtual box](https://www.virtualbox.org/wiki/Downloads) installed.
+ and [virtual box](https://www.virtualbox.org/wiki/Downloads) installed.
 
 ## Install the Laravel project and Homestead
 
