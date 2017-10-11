@@ -2,7 +2,7 @@
 
 ## Guestbook Installation
 
-Ensure you have composer and virtual box installed
+Ensure that you have an up to date version of composer and also have virtual box installed
 
 - ```composer install```
 - ```php vendor/bin/homestead make```
@@ -10,7 +10,7 @@ Ensure you have composer and virtual box installed
 - visit http://localhost:8000 to access the site
 
 
-Migration
-```vagrant ssh```
-```cd code```
-```php artisan migrate```
+Database Migration
+- ```vagrant ssh```
+- ```cd code```
+- ```php artisan migrate```
