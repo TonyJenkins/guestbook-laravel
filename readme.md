@@ -1,11 +1,12 @@
 
 
-# Guestbook Installation
+# Laravel 5.5 Guestbook Example Project
 
-## Install Laravel and Homestead
-
-Ensure that you have an up to date version of [composer](https://getcomposer.org/)
+## Requirements
+- Ensure that you have an up to date version of [composer](https://getcomposer.org/)
  [virtual box](https://www.virtualbox.org/wiki/Downloads) installed.
+
+## Install the Laravel project and Homestead
 
 - ```composer install```
 - ```php vendor/bin/homestead make```
