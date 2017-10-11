@@ -11,7 +11,6 @@
 - ```composer install``` installs Laravel and any dependencies required by the project
 - ```php vendor/bin/homestead make``` generates a homestead.yml file which will be used to generate the virtual machine
 - ```vagrant up``` create and run the virtual machine
-- visit http://localhost:8000 to access the site
 
 ## Database Migration
 
@@ -19,3 +18,7 @@
 - ```cd code``` navigate to the project code
 - ```php artisan migrate``` run the migrations that generate the database tables
 - ```exit``` to leave the virtual machine terminal
+
+## Access the site
+
+- visit http://localhost:8000
