@@ -5,8 +5,8 @@
 Ensure you have composer and virtual box installed
 
 - ```composer install```
-- ```vagrant up```
 - ```php vendor/bin/homestead make```
+- ```vagrant up```
 - visit http://localhost:8000 to access the site
 
 
