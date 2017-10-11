@@ -8,9 +8,9 @@
 
 ## Install the Laravel project and Homestead
 
-- ```composer install```
-- ```php vendor/bin/homestead make```
-- ```vagrant up```
+- ```composer install``` installs Laravel and any dependencies required by the project
+- ```php vendor/bin/homestead make``` generates a homestead.yml file which will be used to generate the virtual machine
+- ```vagrant up``` create and run the virtual machine
 - visit http://localhost:8000 to access the site
 
 ## Database Migration
