@@ -1,28 +1,43 @@
+## Guestbook Installation
 
+### Install Composer
 
-# Laravel 5.5 Guestbook Example Project
+`$ wget http://getcomposer.org/installer`
 
-## Requirements
-- Ensure that you have an up to date version of [composer](https://getcomposer.org/)
- and [virtual box](https://www.virtualbox.org/wiki/Downloads) installed.
+`$ php installer`
 
-## Install the Laravel project and Homestead
+### Install Dependencies with Composer
 
-- ```composer install``` installs Laravel and any dependencies required by the project
-- ```php vendor/bin/homestead make``` generates a homestead.yml file which will be used to generate the virtual machine
-- ```vagrant up``` create and run the virtual machine
+`$ php composer.phar install`
 
-- Copy the ```.env.example``` file and create a new file called ```.env```
-- Run ```php artisan key:generate``` to generate an application key which is used for encryption
+### Create Environment File
 
-## Database Migration
+`$ cp .env.example .env`
 
-- ```vagrant ssh``` to ssh onto the vagrant box
-- ```cd code``` navigate to the project code
-- ```php artisan migrate``` run the migrations that generate the database tables
-- ```php artisan db:seed``` to run the database seeder which will populate the table with dummy data
-- ```exit``` to leave the virtual machine terminal
+Edit the .env file to have the config for SQLite. The *only* database settings needed are:
 
-## Access the site
+`DB_CONNECTION=sqlite`
 
-- visit http://localhost:8000
+`DB_DATABASE=/full/path/to/db.sqlite3`
+
+(Replace the path in the second setting to wherever the files have been cloned.)
+
+Then add the application key to the environment:
+
+`$ php artisan key:generate`
+
+### Create the Database
+
+Make the empty database in the location pointed to by `DB_DATABASE`:
+
+`$ touch db.sqlite3`
+
+Create the tables, and populate the database:
+
+`$ php artisan migrate`
+
+`$ php artisan db:seed`
+
+### Start the App
+
+Start the server, and the app will be available on port 8000.
