@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns="http://www.thymeleaf.org">
+<html>
 <head>
     <title>Guestbook</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
